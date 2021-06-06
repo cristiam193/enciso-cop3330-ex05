@@ -29,5 +29,22 @@ Implement this program as a GUI program that automatically updates the values wh
 
  */
 public class App {
-    
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("What is the first number? ");
+        String num1 = in.nextLine();
+        System.out.print("What is the second number? ");
+        String num2 = in.nextLine();
+
+        int inum1 = Integer.parseInt(num1);
+        int inum2 = Integer.parseInt(num2);
+
+        String add = inum1 + " + " + inum2 + " = " + (inum1 + inum2) + "\n";
+        String sub = inum1 + " - " + inum2 + " = " + (inum1 - inum2) + "\n";
+        String mult = inum1 + " * " + inum2 + " = " + (inum1 * inum2) + "\n";
+        String div = inum1 + " / " + inum2 + " + " + (inum1 / inum2);
+
+        System.out.println(add + sub + mult + div);
+
+    }
 }
